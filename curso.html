@@ -1,0 +1,39 @@
+<title>Cursos</title>
+  <h1>Inscripción a Cursos</h1>
+  <form action="#" method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+    <br><br>
+    <label>Apellido:</label>
+    <input type="text" name="apellido" placeholder="Escribe tu apellido" required>
+    <br><br>
+    <label>Documento de identidad:</label>
+    <input type="text" name="dni" placeholder="Ej. 12345678" required>
+    <br><br>
+    <label>Correo electrónico:</label>
+    <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+    <br><br>
+    <label>Selecciona un curso:</label>
+    <select name="curso" required>
+      <option value="">--Seleccione--</option>
+      <option value="html">Desarrollo Web con HTML</option>
+      <option value="python">Programación con Python</option>
+      <option value="java">Java Básico</option>
+    </select>
+    <br><br>
+    <label>Modalidad:</label><br>
+    <input type="radio" name="modalidad" value="presencial" required> Presencial<br>
+    <input type="radio" name="modalidad" value="virtual"> Virtual
+    <br><br>
+    <label>Horarios disponibles:</label><br>
+    <input type="checkbox" name="horario" value="mañana"> Mañana<br>
+    <input type="checkbox" name="horario" value="tarde"> Tarde<br>
+    <input type="checkbox" name="horario" value="noche"> Noche
+    <br><br>
+    <label>Comentarios adicionales:</label><br>
+    <textarea name="comentarios" rows="4" cols="40" placeholder="Escribe tus comentarios..."></textarea>
+    <br><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+  </form>
+</html>
